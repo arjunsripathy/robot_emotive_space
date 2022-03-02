@@ -110,14 +110,14 @@
 
 <html>
   <head>
-        <title>Model Switching</title>
+        <title>Robot Emotive Space</title>
         <meta property="og:title" content="Factored 3D" />
   </head>
 
   <body>
     <br>
     <center>
-    <span style="font-size:42px">Dynamically Switching Human Prediction Models for Efficient Planning</span>
+    <span style="font-size:42px">Teaching Robots to Span the Space of Functional Expressive Motion</span>
     </center>
 
     <br><br>
@@ -125,13 +125,25 @@
        <tr>
         <td align=center width=100px>
         <center>
-        <span style="font-size:20px"><a href="https://www.linkedin.com/in/arjunsripathy/">Arjun Sripathy*</a></span>
+        <span style="font-size:20px"><a href="https://www.linkedin.com/in/arjunsripathy/">Arjun Sripathy</a></span>
         </center>
         </td>
 
         <td align=center width=100px>
         <center>
-        <span style="font-size:20px"><a href="https://people.eecs.berkeley.edu/~abobu/">Andreea Bobu*</a></span>
+        <span style="font-size:20px"><a href="https://people.eecs.berkeley.edu/~abobu/">Andreea Bobu</a></span>
+        </center>
+        </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px"><a href="https://www.linkedin.com/in/zhongyu-li-b2b8aa160/">Zhongyu Li</a></span>
+        </center>
+        </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px"><a href="https://me.berkeley.edu/people/koushil-sreenath/">Koushil Sreenath</a></span>
         </center>
         </td>
 
@@ -160,7 +172,7 @@
      </tr>
     </table>
     <br><br>
-  <table align=center>
+  <!-- <table align=center>
               <tr>
                   <td width=1000>
                     <center>
@@ -169,7 +181,7 @@
                   </td>
               </tr>
             </table>
-
+ -->
             <br>
 
             <br><br>
@@ -177,37 +189,22 @@
     <center><h1>Abstract</h1></center>
 
             <br><p align='justify'>
-            As environments involving both robots and humans become increasingly common, 
-            so does the need to account for people during planning. To plan effectively, 
-            robots must be able to respond to and sometimes influence what humans do. This 
-            requires a <i>human model</i> which predicts future human actions. A simple model 
-            may assume the human will continue what they did previously; a more complex one 
-            might predict that the human will act optimally, disregarding the robot; whereas 
-            an even more complex one might capture the robot’s ability to influence the human. 
-            These models make different trade-offs between computational time and performance 
-            of the resulting robot plan. Using only one model of the human either wastes computational 
-            resources or is unable to handle critical situations. In this work, we give the robot 
-            access to a suite of human models and enable it to assess the performance- computation 
-            trade-off online. By estimating how an alternate model could improve human prediction and 
-            how that may translate to performance gain, the robot can <i>dynamically switch human models</i> 
-            whenever the additional computation is justified. Our experiments in a driving simulator showcase 
-            how the robot can achieve performance comparable to always using the best human model, but with 
-            greatly reduced computation.</p>
+            Our goal is to enable robots to perform functional tasks in emotive ways, be it in response to their users' emotional states, or expressive of their confidence levels. Prior work has proposed learning independent cost functions from user feedback for each target emotion, so that the robot may optimize it alongside task and environment specific objectives for any situation it encounters. However, this approach is inefficient when modeling multiple emotions and unable to generalize to new ones. In this work, we leverage the fact that emotions are not independent of each other: they are related through a latent space of Valence-Arousal-Dominance (VAD). Our key idea is to learn a model for how trajectories map onto VAD with user labels. Considering the distance between a trajectory's mapping and a target VAD allows this single model to represent cost functions for all emotions. As a result 1) all user feedback can contribute to learning about every emotion; 2) the robot can generate trajectories for any emotion in the space instead of only a few predefined ones; and 3) the robot can respond emotively to user-generated natural language by mapping it to a target VAD. We introduce a method that interactively learns to map trajectories to this latent space and test it in simulation and in a user study. In experiments, we use a simple vacuum robot as well as the Cassie biped.</p>
             <br><br>
           <hr>
-            <table align=center width=650>
-             <center><h1>Paper</h1></center>
+            <!-- <table align=center width=650>
+             <center><h1>(To be Added) Paper</h1></center>
                 <tr>
                   <td><a href="https://arxiv.org/abs/2103.07815"><img style="height:280px" src="./paper_thumbnail.png"/></a></td>
-                  <td><span style="font-size:14pt">Sripathy*, Bobu*, Brown, Dragan<br><br>
-                          Dynamically Switching Human Prediction Models for Efficient Planning
+                  <td><span style="font-size:14pt">Sripathy, Bobu, Li, Sreenah, Brown, Dragan<br><br>
+                          Teaching Robots to Span the Space of Functional Expressive Motion
                     </td>
               </tr>
-            </table>
+            </table> -->
           <br>
 
                 <hr>
 
-          <center><h1><a href='https://github.com/arjunsripathy/model_switching'>Code</a></h1></center>
+          <center><h1><a href='https://github.com/arjunsripathy/robot_emotive_space'>(To be Added) Code</a></h1></center>
 </body>
 </html>
