@@ -1,0 +1,6 @@
+*.pyc
+*/data*/*
+*/data copy/*
+*.pkl
+*/visuals/*
+*/wandb/*
