@@ -1,1 +1,1 @@
-Placeholder repo to soon include cleaned code for "Teaching Robots to Span the Space of Functional Expressive Motion"
+Code release for "Teaching Robots to Span the Space of Functional Expressive Motion"
