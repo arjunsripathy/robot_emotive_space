@@ -144,6 +144,24 @@ class Env():
         '''
         raise NotImplementedError
 
+    def to_torch(self, value, fmt):
+        '''
+        value: np array or tensor
+        fmt: 'np' or 'torch'
+
+        Return tensor version of value
+        '''
+        return value if fmt == 'torch' else torch.tensor(value, dtype=torch.float32)
+
+    def to_original(self, value, fmt):
+        '''
+        value: tensor
+        fmt: 'np' or 'torch'
+
+        Return value in format fmt
+        '''
+        return value if fmt == 'torch' else np.array(value, dtype=np.float32)
+
 
 # Abstract class for tasks in an environment
 class Task():
