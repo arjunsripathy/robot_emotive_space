@@ -17,6 +17,7 @@ class LanguageModel():
         self.shared_fp = config.SHARED_FP
 
         # Saved word -> normalized VAD reference
+        self.features = ["Valence", "Arousal", "Dominance"]
         self.vad_ref = pickle.load(open(f"{self.shared_fp}/vad_ref.pkl", 'rb'))
         self.vad_ref[self.no_style] = np.zeros(self.style_latent_dim)
         self.vocab = list(self.vad_ref.keys())
